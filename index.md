@@ -1,11 +1,8 @@
 ---
 layout: index
-title: 星合の空
+title: 晨曦の余辉
 ---
 ## Contact
-
-- Address: 
-- Phone: 
 - E-mail:
   - 
   - 
