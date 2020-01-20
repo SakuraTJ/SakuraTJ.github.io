@@ -14,7 +14,7 @@ layout: page
     {% assign tt %}
     {% capture tt %}{{ site.post.size | minus:318 }}{% endcapture %}
     {% for post in site.posts limit: tt %}
-    <h3>第2次尝试。tt:{{ tt }}</h3>
+    <a>第3次尝试。tt:{{ tt }}</a>
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>, {{ post.date | date_to_string }}
     </li>
