@@ -11,8 +11,8 @@ layout: page
       </a>
     </li>
     {% assign tt = 0%}
-    {% capture tt %}{{ site.post.size | minus:300 }}{% endcapture %}
-    <a>第9次尝试。size:{{ site.post.size }} ; tt:{{ tt }}</a>
+    {% capture tt %}{{ site.posts.size | minus:300 }}{% endcapture %}
+    <a>第10次尝试。size:{{ site.posts.size }} ; tt:{{ tt }}</a>
   {% elsif site.posts.size <= 324 %}
     {% assign tt=6 %}
     {% for post in site.posts limit: tt %}
