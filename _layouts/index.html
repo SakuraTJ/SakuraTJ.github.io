@@ -4,7 +4,7 @@ layout: page
 {{ content }}
 <h2>Recent</h2>
 <ul>
-  {% if site.posts.size <= 318 %}
+  {% if site.posts.size <= 319 %}
     <li>
       <a>
         还没有写文章哦≧ ﹏ ≦
@@ -12,7 +12,7 @@ layout: page
     </li>
   {% elsif site.posts.size <= 324 %}
     {% assign tt = 0%}
-    {% capture tt %}{{ site.posts.size | minus:318 }}{% endcapture %}
+    {% capture tt %}{{ site.posts.size | minus:319 }}{% endcapture %}
     {% for post in site.posts limit: tt %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>, {{ post.date | date_to_string }}
