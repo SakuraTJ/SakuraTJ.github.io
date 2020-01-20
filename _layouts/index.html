@@ -4,7 +4,7 @@ layout: page
 {{ content }}
 <h2>Recent</h2>
 <ul>
-  <a>测试：{{ site.posts.size-300 }}=19？</a>
+  <a>测试：{{ site.posts.size | minus:300 }}=19？</a>
   {% if site.posts.size <= 319 %}
     <li>
       <a>
@@ -19,7 +19,7 @@ layout: page
     {% endfor %}
     <li>
       <a href="/archive">
-        All {{ site.posts.size-319 }} posts...
+        All {{ site.posts.size | minus:319 }} posts...
       </a>
     </li>
   {% else %}
@@ -30,7 +30,7 @@ layout: page
     {% endfor %}
     <li>
       <a href="/archive">
-        All {{ site.posts.size-319 }} posts...
+        All {{ site.posts.size | minus:319 }} posts...
       </a>
     </li>
   {% endif %}
