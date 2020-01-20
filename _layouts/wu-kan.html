@@ -5,7 +5,7 @@ layout: page
 <h2>全部博文</h2>
 一共319篇博文,长路漫漫！
 <ul>
-  {% for post in site.posts reversed limit:319 %}
+  {% for post in site.posts reversed limit:319 offset:1 %}
       <li>
         <small>{{ post.date | date_to_string }}</small>
         <a href="{{ post.url }}">{{ post.title }}</a>
