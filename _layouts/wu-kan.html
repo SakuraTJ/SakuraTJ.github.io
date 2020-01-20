@@ -3,15 +3,13 @@ layout: page
 ---
 {{ content }}
 <h2>全部博文</h2>
-319篇博文,长路漫漫！
+一共319篇博文,长路漫漫！
 <ul>
-  {% for post in site.posts %}
-    {% if post.data < 2020 %}
+  {% for post in site.posts limit:319 %}
       <li>
         <small>{{ post.date | date_to_string }}</small>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
-    {% endif %}
   {% endfor %}
 </ul>
 <h2>wu-kan的Tag</h2>
