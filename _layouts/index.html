@@ -11,10 +11,10 @@ layout: page
       </a>
     </li>
   {% elsif site.posts.size <= 324 %}
-    {% assign tt %}
-    {% capture tt %}{{ site.post.size | minus:318 }}{% endcapture %}
-    {% for post in site.posts limit: tt %}
+    {% assign tt=6 %}
+    <!--{% capture tt %}{{ site.post.size | minus:318 }}{% endcapture %} -->
     <a>第3次尝试。tt:{{ tt }}</a>
+    {% for post in site.posts limit: tt %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>, {{ post.date | date_to_string }}
     </li>
