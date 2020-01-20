@@ -11,7 +11,7 @@ layout: page
       </a>
     </li>
   {% elsif site.posts.size <= 324 %}
-    {% for post in site.posts limit:site.post.size-318 %}
+    {% for post in site.posts limit:{{ site.post.size | minus:319 }} %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>, {{ post.date | date_to_string }}
     </li>

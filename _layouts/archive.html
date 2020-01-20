@@ -4,7 +4,7 @@ layout: page
 {{ content }}
 {{ site.posts.size }}篇博文。长路漫漫！
 <ul>
-  {% for post in site.posts limit:site.post.size-318 %}
+  {% for post in site.posts limit:{{ site.post.size | minus:319 }} %}
   <li>
     <small>{{ post.date | date_to_string }}</small>
     <a href="{{ post.url }}">{{ post.title }}</a>
