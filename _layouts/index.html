@@ -10,9 +10,9 @@ layout: page
         还没有写文章哦≧ ﹏ ≦
       </a>
     </li>
-    {% assign tt = 6%}
+    {% assign tt = 0%}
     {% capture tt %}{{ site.post.size | minus:300 }}{% endcapture %}
-    <a>第8次尝试。tt:{{ tt }}</a>
+    <a>第9次尝试。size:{{ site.post.size }} ; tt:{{ tt }}</a>
   {% elsif site.posts.size <= 324 %}
     {% assign tt=6 %}
     {% for post in site.posts limit: tt %}
